@@ -1,0 +1,316 @@
+:root {
+    --orange: #FF9900;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.header{
+    background: #2E2E2E;
+    padding: 40px 0;
+    margin-bottom: 60px;
+}
+.wrapper {
+    min-height: 100%;
+    background-color: yellow;
+}
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.download-cv-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--orange);
+}
+.download-cv-link:before {
+    content: "";
+    background-image: url("../img/Vector.png");
+}
+.username {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    
+    color: #FFFFFF;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contacts__phone {
+    top: 40px;
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1.24;
+    /* identical to box height */
+    
+    color: #FFFFFF;
+    
+}
+.contacts__mail {
+    top: 70px;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: var(--orange);
+}
+.page-content {
+    margin-bottom: 70px;
+}
+.about {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+.about__left {
+    max-width: 500px;
+    margin-right: 45px;
+}
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;    
+}
+
+.skills__tech-list {
+    font-size: 24px;
+    line-height: 36px;
+}
+.skills__tech-item {
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 27px;
+    position: relative;
+    /* or 169% */
+    
+    
+    /* Gray 2 */
+    
+    color: #4F4F4F;
+}
+.skills__tech-item:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--orange);
+}
+.desc__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.desc__item {
+    width: calc(100% / 2 - (34px / 2));
+}
+
+.footer {
+    background: #2E2E2E;
+    padding: 40px 0;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-networks{
+    display: flex;
+    justify-content: space-between;
+
+}
+.social-items {
+    width: calc(100% / 6 - (10px / 6));
+}
+.social-items:hover {
+    opacity: 0.6;
+}
+@media (max-width: 760px){
+    body {
+        font-size: 15px;
+    }
+    .username {
+        font-size: 30px;
+    }
+    .download-cv-link{
+        font-size: 16px;
+    }
+    .contacts__mail {
+        font-size: 13px;
+    }
+    .contacts__phone {
+        font-size: 16px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    .skills__tech-item{
+        font-size: 14px;
+    }
+}
+@media (max-width: 670px){
+    body {
+        font-size: 13px;
+    }
+    .username {
+        font-size: 25px;
+    }
+    .download-cv-link{
+        font-size: 14px;
+    }
+    .contacts__mail {
+        font-size: 12px;
+    }
+    .contacts__phone {
+        font-size: 14px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .skills__tech-item{
+        font-size: 12px;
+    }
+
+}
+@media (max-width: 520px){
+    .username {
+        font-size: 20px;
+    }
+    .download-cv-link{
+        font-size: 12px;
+    }
+    .contacts__mail {
+        font-size: 10px;
+    }
+    .contacts__phone {
+        font-size: 12px;
+    }
+    .title{
+        font-size: 19px;
+    }
+    h3 {
+        font-size: 13px;
+    }
+    .skills__tech-item{
+        font-size: 10px;
+    }
+    .social-items {
+        max-width: 13%;
+    }
+
+}
+
+@media (max-width: 450px){
+    body {
+        font-size: 11px;
+    }
+    .username {
+        font-size: 17px;
+    }
+    .download-cv-link{
+        font-size: 10px;
+    }
+    .contacts__mail {
+        font-size: 9px;
+    }
+    .contacts__phone {
+        font-size: 11px;
+    }
+    .title{
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 11px;
+    }
+    .skills__tech-item{
+        font-size: 9px;
+    }
+    .social-items {
+        max-width: 10%;
+    }
+
+}
+
+@media (max-width: 370px){
+    body {
+        font-size: 10px;
+    }
+    .username {
+        font-size: 13px;
+    }
+    .download-cv-link{
+        font-size: 9px;
+    }
+    .contacts__mail {
+        font-size: 8px;
+    }
+    .contacts__phone {
+        font-size: 9px;
+    }
+    .title{
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 9px;
+    }
+    .skills__tech-item{
+        font-size: 7px;
+    }
+    .social-items {
+        max-width: 10%;
+    }
+
+}
